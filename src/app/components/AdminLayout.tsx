@@ -16,7 +16,7 @@ import {
   Menu,
   X,
 } from 'lucide-react';
-
+<img src="/src/assets/logo.png" />
 
 const menuItems = [
   { icon: LayoutDashboard, label: 'Dashboard', path: '/admin/dashboard' },
@@ -65,7 +65,7 @@ export default function AdminLayout() {
         <div className="p-6 border-b border-indigo-800">
           <div className="flex items-center gap-3 mb-2">
             <img
-              src="/logo.png"
+              src="/src/assets/logo.png"
               alt="Prime Tutorials Logo"
               className="w-10 h-10"
             />
