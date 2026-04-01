@@ -16,7 +16,8 @@ import {
   Menu,
   X,
 } from 'lucide-react';
-<img src="/logo.png" />
+// @ts-ignore
+import logoUrl from '../../assets/logo.png';
 
 const menuItems = [
   { icon: LayoutDashboard, label: 'Dashboard', path: '/admin/dashboard' },
@@ -65,7 +66,7 @@ export default function AdminLayout() {
         <div className="p-6 border-b border-indigo-800">
           <div className="flex items-center gap-3 mb-2">
             <img
-              src="/src/assets/logo.png"
+              src={logoUrl}
               alt="Prime Tutorials Logo"
               className="w-10 h-10"
             />
@@ -86,11 +87,10 @@ export default function AdminLayout() {
                 key={item.path}
                 to={item.path}
                 onClick={closeMobileMenu}
-                className={`flex items-center gap-3 px-6 py-3 transition-colors ${
-                  isActive
-                    ? 'bg-indigo-800 border-l-4 border-white'
-                    : 'hover:bg-indigo-800/50'
-                }`}
+                className={`flex items-center gap-3 px-6 py-3 transition-colors ${isActive
+                  ? 'bg-indigo-800 border-l-4 border-white'
+                  : 'hover:bg-indigo-800/50'
+                  }`}
               >
                 <Icon className="w-5 h-5" />
                 <span>{item.label}</span>

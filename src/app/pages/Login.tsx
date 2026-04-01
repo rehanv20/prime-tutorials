@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useAuth } from '../contexts/AuthContext';
-import { LogIn, GraduationCap } from 'lucide-react';
-<img src="/logo.png" />
+import { LogIn } from 'lucide-react';
+// @ts-ignore
+import logoUrl from '../../assets/logo.png';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -41,7 +42,7 @@ export default function Login() {
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-8">
         <div className="flex flex-col items-center mb-8">
           <img
-            src="/src/assets/logo.png"
+            src={logoUrl}
             alt="Prime Tutorials Logo"
             className="w-20 h-20 mb-4"
           />
