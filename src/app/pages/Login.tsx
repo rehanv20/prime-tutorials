@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useAuth } from '../contexts/AuthContext';
 import { LogIn, GraduationCap } from 'lucide-react';
-<img src="/src/assets/logo.png" />
+<img src="/logo.png" />
 
 export default function Login() {
   const [email, setEmail] = useState('');

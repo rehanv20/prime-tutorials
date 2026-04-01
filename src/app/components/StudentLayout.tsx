@@ -11,7 +11,7 @@ import {
   Menu,
   X,
 } from 'lucide-react';
-<img src="/src/assets/logo.png" />
+<img src="/logo.png" />
 
 const menuItems = [
   { icon: LayoutDashboard, label: 'Dashboard', path: '/student/dashboard' },
